@@ -1,0 +1,15 @@
+--
+-- Файл сгенерирован с помощью SQLiteStudio v3.4.4 в Сб ноя 11 03:56:12 2023
+--
+-- Использованная кодировка текста: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Таблица: data
+CREATE TABLE IF NOT EXISTS data (id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, "name user" TEXT NOT NULL, card INTEGER NOT NULL, adress TEXT NOT NULL, datazakaza TEXT NOT NULL, "data delivery" TEXT NOT NULL, chek TEXT NOT NULL, summa INTEGER NOT NULL);
+INSERT INTO data (id, "name user", card, adress, datazakaza, "data delivery", chek, summa) VALUES (1, 'cat', 12345678, 'Калуга, улицаПоселковая, 9, 0, 78', '10.09', '16.00', 'hddgjfg', 123);
+INSERT INTO data (id, "name user", card, adress, datazakaza, "data delivery", chek, summa) VALUES (2, 'маша', 23456789, 'Калуга, улицаПоселковая, 9, 0, 78', '16.00', '23.00', 'авровапо', 456);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

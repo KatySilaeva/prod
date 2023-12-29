@@ -1,0 +1,24 @@
+--
+-- Файл сгенерирован с помощью SQLiteStudio v3.4.4 в Сб ноя 11 16:22:45 2023
+--
+-- Использованная кодировка текста: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Таблица: food
+CREATE TABLE IF NOT EXISTS food (id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, dish TEXT NOT NULL, type TEXT NOT NULL, price INTEGER NOT NULL);
+INSERT INTO food (id, dish, type, price) VALUES (1, 'Шампиньоны', 'грибы', 100);
+INSERT INTO food (id, dish, type, price) VALUES (2, 'Укроп', 'зелень', 60);
+INSERT INTO food (id, dish, type, price) VALUES (3, 'Петрушка', 'зелень', 60);
+INSERT INTO food (id, dish, type, price) VALUES (4, 'Салат', 'зелень', 100);
+INSERT INTO food (id, dish, type, price) VALUES (5, 'Помидор', 'овощ', 140);
+INSERT INTO food (id, dish, type, price) VALUES (6, 'Огурец', 'овощ', 85);
+INSERT INTO food (id, dish, type, price) VALUES (7, 'Лук', 'овощ', 17);
+INSERT INTO food (id, dish, type, price) VALUES (8, 'Морковь', 'овощ', 9);
+INSERT INTO food (id, dish, type, price) VALUES (9, 'Картофель', 'овощ', 34);
+INSERT INTO food (id, dish, type, price) VALUES (10, 'Честнок', 'овощ', 30);
+INSERT INTO food (id, dish, type, price) VALUES (11, 'Молоко', 'молочная продукция', 75);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
