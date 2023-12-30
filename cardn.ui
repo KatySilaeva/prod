@@ -60,7 +60,7 @@ font: 75 20pt &quot;Times New Roman&quot;;</string>
     <string>Оплатить</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="card">
    <property name="geometry">
     <rect>
      <x>260</x>
@@ -71,6 +71,9 @@ font: 75 20pt &quot;Times New Roman&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -90,13 +93,13 @@ color: rgb(255, 255, 255);</string>
     <string>Ввидите карту:</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>220</y>
-     <width>581</width>
-     <height>221</height>
+     <x>260</x>
+     <y>170</y>
+     <width>591</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
