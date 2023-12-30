@@ -1,4 +1,4 @@
-from card import Ui_Form
+from cardn import Ui_Form
 from PyQt5.QtWidgets import QWidget
 
 class Card(QWidget,Ui_Form):

@@ -11,7 +11,7 @@ class User(QWidget, Ui_Form):
         self.count=0
         self.setupUi(self)
         self.buyp.clicked.connect(self.buypush)
-        self.con = sqlite3.connect("C:/Users/User/PycharmProjects/pythonProject6/db.sqlite")
+        self.con = sqlite3.connect("db.sqlite")
         cur = self.con.cursor()
         result = cur.execute("""SELECT dish FROM food""").fetchall()
         for i in result:
